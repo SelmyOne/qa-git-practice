@@ -3,3 +3,9 @@ def test_completed_todo():
     assert todo["id"] == 4
     # У завершённого дела completed должен быть True.
     assert todo["completed"] is True
+
+
+def test_open_todo():
+    todo = {"id": 1, "completed": False}
+    assert todo["id"] == 1
+    assert todo["completed"] is False
